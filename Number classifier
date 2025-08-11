@@ -1,0 +1,15 @@
+def main():
+  usrinput = int(input("Please provide a number: "))
+  classify_number(usrinput)
+
+
+
+def classify_number(n):
+  if n > 0:
+    print("Positive")
+  elif n < 0:
+    print ("Negative")
+  else:
+    print("Zero")
+
+main()
