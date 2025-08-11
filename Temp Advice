@@ -1,0 +1,13 @@
+def main():
+  usrinput = int(input("Whats the weather: "))
+  print(temperature_advice(usrinput))
+
+def temperature_advice(temp):
+  if temp < 10:
+    return "Wear a coat"
+  elif 10 <= temp <= 20:
+    return "Wear a sweater"
+  else: 
+    return "Wear a t-shirt"
+
+main()
