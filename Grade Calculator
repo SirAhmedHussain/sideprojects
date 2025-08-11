@@ -1,0 +1,22 @@
+def main():
+  usrinput = int(input("Please input grade between 0-100: "))
+  print(calculate_grade(usrinput))
+
+def calculate_grade(score):
+  if score < 0 or score > 100:
+    return "Invalid score please enter a valid score"
+  elif score >= 90:
+    return "A"
+  elif score >= 80:
+    return "B"
+  elif score >= 70:
+    return "C"
+  elif score >= 60:
+    return "D"
+  elif score < 60:
+    return "F"
+  
+
+
+
+main()
