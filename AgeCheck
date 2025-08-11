@@ -1,0 +1,17 @@
+def main ():
+  usrinput = int(input("How old are you? "))
+  check_age(usrinput)
+
+
+def check_age(n):
+  if n < 18:
+    print("You're a minor")
+  elif 18 <= n < 65:
+    print("You're an adult")
+  elif n >= 65:
+    print("You're a senior")
+  else: 
+    print("Please enter a valid age")
+
+
+main()
