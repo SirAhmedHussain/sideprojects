@@ -1,0 +1,26 @@
+def main(): 
+  list_one = [1,2,3,4,5,6,7,8,9,10] 
+  print(f"The square of {list_one} is {square_list(list_one)}") 
+
+def square_list(list): 
+  return [i**2 for i in list]
+
+main()
+
+def main(): 
+  list_one = [1,2,3,4,5,6,7,8,9,10] 
+  print(f"The square of {list_one} is {square_list(list_one)}") 
+
+def square_list(list): 
+  return [i**2 for i in list if i%2 == 0] 
+main()
+
+def main():
+  first_word = "Hello world"
+  print(f"here is everything in the list {create_list(first_word)}")
+
+def create_list(str):
+  return [i for i in str if i != " "]
+
+
+main()
