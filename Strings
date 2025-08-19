@@ -1,0 +1,15 @@
+def main():
+
+  usr_input = input("Input String: ")
+  my_list = []
+  print(f"Here you go lord chatgpt: {list_cap(usr_input, my_list)}")
+
+
+def list_cap(s, ls):
+  words = s.replace(" ", "")
+  for word in words:
+    ls.append(word.upper())
+  return ls
+
+
+main()
