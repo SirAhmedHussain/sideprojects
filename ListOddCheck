@@ -1,0 +1,15 @@
+def main():
+
+  num_lst = []
+  usr_input = int(input("How many numbers do you want in your list? "))
+
+  for x in range(usr_input):
+    lst_nums = int(input(f"input the {x+1} number: "))
+    num_lst.append(lst_nums)
+
+  print(f"Here is the list with the odd numbers squared lord gpt: {odd_lst_squared(num_lst)}")
+
+def odd_lst_squared(lst):
+  return [num for num in lst if num%2 != 0]
+
+main()
