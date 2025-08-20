@@ -1,0 +1,14 @@
+def main():
+  my_dict = {}
+  num_elmnts = int(input("How many inputs do you want to put in your dict: "))
+
+  for _ in range(num_elmnts):
+    stdnt_name = input("Please input the student names: ").strip()
+    stdnt_grade = int(input("How much he score? "))
+    my_dict[stdnt_name] = stdnt_grade
+
+  seventy_plus = {k: v for k, v in my_dict.items() if v >= 70}
+  print(seventy_plus)
+
+
+main()
