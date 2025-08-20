@@ -1,0 +1,9 @@
+def main():
+
+  word_list = []
+  usr_input = input("Input String: ").strip()
+
+  print(usr_input.split())
+ 
+  
+main()
