@@ -1,0 +1,18 @@
+def main():
+  my_list = []
+  usr_input = int(input("How many values will you add in your list? "))
+  
+  for _ in range(usr_input):
+    my_tup = tuple(input("Enter value separated by a comma: ").split(","))
+    my_list.append(my_tup)
+
+  print(tups_sum(my_list))
+
+
+def tups_sum(lst):
+  sum_lst = []
+  for tup in lst:
+    sum_lst.append(sum(tuple(int(x) for x in tup)))
+  return sum_lst
+
+main()
