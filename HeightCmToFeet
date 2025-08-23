@@ -1,0 +1,3 @@
+usr_input = int(input("Input Height in Cm: "))
+usr_feet, usr_inches = str(usr_input/30.48).split(".")
+print(f"The Height is {usr_feet} Feet and {usr_inches[:1]} inches")
