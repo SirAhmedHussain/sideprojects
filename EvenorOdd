@@ -1,0 +1,13 @@
+#Even or Odd
+def main():
+  usr_input = int(input("Enter a number: "))
+  print(evenorodd(usr_input))
+
+def evenorodd(x):
+  if x%2 == 0:
+    return (f"The number {x} is even")
+  else:
+    return (f"The number {x} is odd")
+
+if __name__ == "__main__":
+  main()
